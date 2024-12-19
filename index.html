@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor-widget-header">
+        <div><span></span></div>
+        <div>
+            <p class="widget-header-texto">Tel.:1111-11111</p>
+        </div>    
+        <div>
+            <a class="widget-header-enlace" href="#productos">Nosotros</a>
+            <a class="widget-header-enlace" href="#contacto">Contacto</a>
+        </div>
+        <div><span></span></div>
+    </div>
+    <div class="contenedor_logo_buscador_accesor_carrito">
+    <div class="logo">
+        <h1>Logo</h1>
+    </div>
+    <div class="contenedor-buscador">
+        <form action="/search" method="get" class="form-buscador">
+            <input type="text" name="s" id="search-input" class="input-buscador" placeholder="Buscar productos..." required>
+            <button type="submit" class="boton-buscador">Buscar</button>
+        </form>
+    </div>
+<!-- contenedor de Ícono -->    
+    <div class="icon-container">
+<!-- Ícono de usuario -->
+        <div class="user-icon">
+            <i class="fas fa-user" onclick="toggleDropdown()"></i>
+            <div class="dropdown-menu" id="userDropdown">
+                <a href="#" class="dropdown-link">Iniciar Sesión</a>
+                <a href="#" class="dropdown-link">Registrarse</a>
+            </div>
+        </div>
+<!-- Ícono de carrito -->
+        <div class="cart-icon">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    </div>
+<!-- Ícono de carrito --> 
+<!-- Menú Categorías PC -->
+<div class="menu-contenedor-categorias">
+    <ul class="menu-categorias">
+        <li><a href="#">Alcalinas</a></li>
+        <li><a href="#">Litio</a></li>
+        <li><a href="#">Botón</a></li>
+        <li><a href="#">Telefonía fija</a></li>
+        <li><a href="#">Especiales</a></li>
+    </ul>
+</div>
+<!-- Fin Menú Categorías PC -->
+<!-- Menú Categorías Móvil -->
+<div class="menu-contenedor-categorias-mobil">
+    <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+    <div class="menu-desplegable" id="menu">
+<!-- Cruz para cerrar -->
+    <i class="fas fa-times close-menu" onclick="toggleMenu()"></i>
+
+<!-- Barra de búsqueda dentro del menú en móviles -->
+    <div class="contenedor-buscador">
+        <form action="/search" method="get" class="form-buscador">
+            <input type="text" name="s" id="search-input" class="input-buscador" placeholder="Buscar productos..." required>
+            <button type="submit" class="boton-buscador">Buscar</button>
+        </form>
+    </div>
+    <ul class="menu-categorias-mobil">
+        <li><a href="#">Alcalinas</a></li>
+        <li><a href="#">Litio</a></li>
+        <li><a href="#">Botón</a></li>
+        <li><a href="#">Telefonía fija</a></li>
+        <li><a href="#">Especiales</a></li>
+    </ul>
+    </div>
+</div>
+<!-- Fin Menú Categorías Móvil -->
+</header>
+<!-- Seccion Imagen Principal-->
+<section class="imagen-seccion">
+    <img src="img/fondo.webp" alt="Descripción de la imagen" class="imagen-responsiva">
+</section>
+<!-- Fin Seccion Imagen Principal-->
+<!-- Seccion widget main-->
+<div class="contenedor-widget-main">
+    <div class="card-widget-main">
+        <div class="card-widget-icon">
+            <i class="fa-regular fa-credit-card"></i>
+        </div>
+        <div class="card-widget-texto">
+            <h6>Medios de Pago</h6>
+        </div>
+    </div>
+    <hr class=".separador">
+    <div class="card-widget-main">
+        <div class="card-widget-icon">
+            <i class="fa-solid fa-car-side"></i>
+        </div>
+        <div class="card-widget-texto">
+             <h6>Envios al País</h6>
+        </div>
+    </div>
+    <hr class=".separador">
+    <div class="card-widget-main">
+        <div class="card-widget-icon">
+            <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <div class="card-widget-texto">
+             <h6>Contactanos</h6>
+        </div>
+    </div>
+    <hr class=".separador">
+    <div class="card-widget-main">
+        <div class="card-widget-icon">
+            <i class="fa-solid fa-percent"></i>
+        </div>
+        <div class="card-widget-texto">
+             <h6>Super Descuentos</h6>
+        </div>
+    </div>
+</div>
+<!-- Fin Seccion widget main-->  
+<!-- Seccion Categorias-->
+<div class="categorias-container">
+    <div class="categoria-item">
+        <img src="img/135902---Multiválvula-3-vías-para-roscar.jpg" alt="Categoría 1" class="categoria-img">
+        <h3 class="categoria-titulo">Aires Acondicionados</h3>
+    </div>
+    <div class="categoria-item">
+        <img src="img/352015---clarificador-vulclor.jpg" alt="Categoría 2" class="categoria-img">
+        <h3 class="categoria-titulo">Calefacción</h3>
+    </div>
+    <div class="categoria-item">
+        <img src="img/90000527.jpg" alt="Categoría 3" class="categoria-img">
+        <h3 class="categoria-titulo">Sistemas VRF</h3>
+    </div>
+    <div class="categoria-item">
+        <img src="img/315DDO.jpg" alt="Categoría 4" class="categoria-img">
+        <h3 class="categoria-titulo">Multisplit</h3>
+    </div>
+</div>
+<!-- Fin Seccion Categorias-->   
+
+<!-- Seccion Banners-->
+<div class="banners-container">
+    <a href="https://link-a-nueva-pagina-1.com" class="banner-item">
+        <img src="https://via.placeholder.com/600x200" alt="Banner 1">
+    </a>
+    <a href="https://link-a-nueva-pagina-2.com" class="banner-item">
+        <img src="https://via.placeholder.com/600x200" alt="Banner 2">
+    </a>
+</div>
+<!-- Fin Seccion Banners --> 
+<!-- Seccion Novedades -->
+<div class="novedades-container">
+    <div class="productos-row">
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300x300" alt="Producto 1">
+            <h5>Producto 1</h5>
+            <p>Descripción breve del producto</p>
+        </div>
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300x300" alt="Producto 2">
+            <h5>Producto 2</h5>
+            <p>Descripción breve del producto</p>
+        </div>
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300x300" alt="Producto 3">
+            <h5>Producto 3</h5>
+            <p>Descripción breve del producto</p>
+        </div>
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300x300" alt="Producto 4">
+            <h5>Producto 4</h5>
+            <p>Descripción breve del producto</p>
+        </div>
+    </div>
+    <div class="productos-row">
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300x300" alt="Producto 5">
+            <h5>Producto 5</h5>
+            <p>Descripción breve del producto</p>
+        </div>
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300x300" alt="Producto 6">
+            <h5>Producto 6</h5>
+            <p>Descripción breve del producto</p>
+        </div>
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300x300" alt="Producto 7">
+            <h5>Producto 7</h5>
+            <p>Descripción breve del producto</p>
+        </div>
+        <div class="producto-item">
+            <img src="https://via.placeholder.com/300x300" alt="Producto 8">
+            <h5>Producto 8</h5>
+            <p>Descripción breve del producto</p>
+        </div>
+    </div>
+    <a href="/pagina-de-productos" class="ver-mas">Ver más</a>
+</div>
+<!-- Fin Seccion Novedades --> 
+    <footer>
+        <p>&copy; 2024 Mi Tienda</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
