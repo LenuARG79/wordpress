@@ -119,7 +119,7 @@
 }
 @media (min-width: 769px) {
   /* Barra de búsqueda visible solo en escritorio */
-     .contenedor-buscador {
+    .contenedor-buscador {
         display: block;
     }
 }
@@ -183,7 +183,6 @@
 
 /* Menu principal de categorias*/
 
-/* Menú Categorías PC */
 /* Menú Categorías PC */
 .menu-contenedor-categorias {
     background-color: #333;
@@ -284,7 +283,6 @@
     cursor: pointer;
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
     .menu-contenedor-categorias {
         display: none;
@@ -306,7 +304,7 @@
 /* Sección Imagen Principal */
 .imagen-seccion {
     position: relative;
-    width: 100vw; 
+    width: 100%; 
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -314,7 +312,7 @@
 }
 
 .imagen-responsiva {
-    width: 100vw; 
+    width: 100%; 
     height: auto; 
     object-fit: cover;
 }
@@ -360,7 +358,7 @@
 }
 @media (max-width: 768px) {
     .card-widget-texto h6 {
-      display: none;
+    display: none;
     }
 }
 /* Fin Seccion Widget main */
@@ -489,8 +487,35 @@
         width: 100%;  /* 1 producto por fila en móviles */
     }
 }
-
 /* Fin Seccion Novedades */
 
+/* Footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Seccion Copyrigrh */
+.copyright-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #777;
+    width: 100%;
+    height: 2rem;
+}
+.copyright-container p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+/* Fin Seccion Copyrigrh */
+/* Fin Footer */
 
 
