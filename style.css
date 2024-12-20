@@ -492,13 +492,88 @@
 /* Footer */
 .footer-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #778;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Sección de enlaces centrados en una fila */
+
+.nav-links ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.nav-links ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info {
+    text-align: right;
+    color: #fff;
+}
+
+.contact-info h3 {
+    color: white;
+    margin-bottom: 0.5rem;
 }
 
 .card-footer {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.card-footer i {
+    color: #fff;
+}
+
+.card-footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.card-footer a {
+    margin-top: 0.5rem;
+    letter-spacing: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .card-footer {
+        justify-content: center;
+    }
 }
 
 /* Seccion Copyrigrh */
@@ -517,5 +592,51 @@
 }
 /* Fin Seccion Copyrigrh */
 /* Fin Footer */
+
+/* Pagina Nosotros */
+
+.nosotros {
+    background-color: #61c2d0;
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nosotros h2 {
+    font-size: 18px;
+    color: white;
+    
+}
+.p-nos {
+    margin-top: 10px;
+    padding: 15px;
+}
+/*fin Nosotros*/
+
+/* Fin Pagina Nosotros */
+
+/* Lista Productos */
+
+.galeria-producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 120px);
+    grid-gap: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.productos {
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+}
+.producto {
+    background-image: url(#);
+}
+
+/* Fin Lista Productos */
 
 
